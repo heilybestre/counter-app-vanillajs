@@ -1,0 +1,30 @@
+{
+  "name": "counter-app-vanilla-js",
+  "version": "1.0.0",
+  "description": "Counter App using Vanilla JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "npm run build && node dist/index.js"
+  },
+  "keywords": [
+    "counter app",
+    "vanilla js",
+    "javascript"
+  ],
+  "author": "Mihaela Mamenta",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.10.1",
+    "compression": "^1.3.0",
+    "express": "^4.11.0",
+    "lodash": "^2.4.1",
+    "morgan": "^1.5.1",
+    "node-fetch": "^2.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.2"
+  }
+}
